@@ -1,0 +1,41 @@
+{
+  "project": {
+    "root_dir": "E:\\bmdsis\\6channels",
+    "db_path": "image_index.sqlite"
+  },
+  "viewer": {
+    "window_name": "Macrophage Channel Viewer",
+    "max_upscale": 3
+  },
+  "indexing": {
+    "batch_size": 50000
+  },
+  "filtering": {
+    "workers": 88,
+    "batch_size": 50000,
+    "rules": {
+      "nucleus_snr": {
+        "enabled": true,
+        "min_snr": 5.0
+      },
+      "focus": {
+        "enabled": true,
+        "min_laplacian_var": 20.0
+      },
+      "cell_completeness": {
+        "enabled": true,
+        "max_centroid_border_frac": 0.30,
+        "min_nucleus_area_frac": 0.02,
+        "max_nucleus_area_frac": 0.50
+      },
+      "membrane_signal": {
+        "enabled": true,
+        "min_mean": 0.01
+      },
+      "marker_signal": {
+        "enabled": true,
+        "min_max_mean": 0.01
+      }
+    }
+  }
+}
