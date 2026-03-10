@@ -4,6 +4,8 @@ An end-to-end computational pipeline for processing multiplex immunofluorescence
 
 Built for CellDIVE multiplexed imaging data across multiple patient cohorts, targeting four immunosuppressive macrophage subtypes: **PD1+/PD-L1+ x CD68+/CD163+**.
 
+View the report [here](./report.pdf)
+
 ---
 
 ## Table of Contents
